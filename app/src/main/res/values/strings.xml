@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SimpleToDo</string>
+    <string name="enter_your_schedule">Enter your schedule</string>
+    <string name="add">ADD</string>
+    <string name="clear">CLEAR</string>
+    <string name="enter_a_poistion">Enter a poistion</string>
 </resources>

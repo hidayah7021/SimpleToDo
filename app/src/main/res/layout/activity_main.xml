@@ -12,7 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Enter your schedule"
+        android:hint="@string/enter_your_schedule"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_a_poistion"
         android:inputType="text" />
 
     <TextView
@@ -22,22 +30,22 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonAdd"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="ADD" />
+            android:text="@string/add" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonClear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="CLEAR" />
+            android:text="@string/clear" />
 
     </LinearLayout>
 
