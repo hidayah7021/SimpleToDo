@@ -15,7 +15,6 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     EditText editInput;
-    EditText editPost;
     TextView tvDisplay;
     Button btnAdd;
     Button btnClear;
@@ -29,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         editInput = findViewById(R.id.editInput);
-        editPost = findViewById(R.id.editPost);
         tvDisplay = findViewById(R.id.textDisplay);
         btnAdd = findViewById(R.id.buttonAdd);
         btnClear = findViewById(R.id.buttonClear);
@@ -40,16 +38,14 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayAdapter aaList = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, addSchedule);
         scheduleList.setAdapter(aaList);
-
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String sched = editInput.getText().toString();
-                int pos = Integer.parseInt(editPost.getText().toString());
+                aaList.add(sched);
                 aaList.notifyDataSetChanged();
             }
         });
-
         btnClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

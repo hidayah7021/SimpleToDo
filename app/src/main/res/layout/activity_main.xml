@@ -15,14 +15,6 @@
         android:hint="@string/enter_your_schedule"
         android:inputType="text" />
 
-    <EditText
-        android:id="@+id/editPost"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/enter_a_poistion"
-        android:inputType="text" />
-
     <TextView
         android:id="@+id/textDisplay"
         android:layout_width="wrap_content"
